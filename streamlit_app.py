@@ -15,7 +15,7 @@ def main():
         whole_pipeline_image = Image.open("_assets/training_and_deployment_pipeline_updated.png")
         st.image(whole_pipeline_image, caption="Whole Pipeline")
     except FileNotFoundError:
-        st.warning("Diagram images not found in the '_assets' folder, but the app will still work!")
+        st.warning("Diagram images not found in the '_assets' folder, but the app will still work")
 
     st.markdown(
         """ 
@@ -87,7 +87,7 @@ def main():
             st.success(
                 f"Your Customer Satisfaction rate (range between 0 - 5) with given product details is: {score:.2f}"
             )
-            st.balloons() # Adding a little celebration animation!
+            st.balloons()
 
         except Exception as e:
             st.error(f"An error occurred while making the prediction: {e}")

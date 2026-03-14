@@ -17,11 +17,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.config == "deploy" or args.config == "deploy_and_predict":
-        print("🚀 Running deployment pipeline...")
-        # Run the deployment pipeline (no arguments needed now!)
+        print("Running deployment pipeline")
         continuous_deployment_pipeline()
     
     if args.config == "predict" or args.config == "deploy_and_predict":
-        print("🔮 Running inference pipeline...")
+        print("Running inference pipeline")
         # Run the inference pipeline
         inference_pipeline()
