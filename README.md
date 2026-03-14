@@ -4,13 +4,13 @@
 
 E-commerce platforms process millions of orders across diverse product categories,
 sellers, and logistics networks. Predicting whether a customer will be satisfied with
-their experience — before they even leave a review has direct business value: it
+their experience before they even leave a review has direct business value: it
 enables proactive intervention, seller quality control, and smarter logistics decisions.
 
 This project investigates how production-grade MLOps practices can be applied to
 customer satisfaction scoring using the Brazilian Olist e-commerce dataset. The system
 is designed to remain reliable and monitorable as real-world data distributions shift
-over time — for example, as new product categories emerge, seasonal demand changes, or
+over time for example, as new product categories emerge, seasonal demand changes, or
 logistics performance degrades.
 
 The central question this project addresses is: how should a machine learning deployment
