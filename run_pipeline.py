@@ -24,9 +24,9 @@ if __name__ == "__main__":
     os.environ["ZENML_MODEL_NAME"] = args.model
     os.environ["ZENML_FINE_TUNING"] = "False" if args.no_tune else "True"
     
-    print(f"\n🚀 Starting Pipeline...")
-    print(f"🧠 Model: {args.model}")
-    print(f"⚙️  Fine Tuning (Optuna): {not args.no_tune}\n")
+    print(f"\n Starting Pipeline")
+    print(f"Model: {args.model}")
+    print(f"Fine Tuning (Optuna): {not args.no_tune}\n")
     
     # Run the pipeline
     train_pipeline()
