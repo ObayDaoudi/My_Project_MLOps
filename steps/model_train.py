@@ -76,3 +76,4 @@ def train_model(
     except Exception as e:
         logging.error("Error in training model: {}".format(e))
         raise e
+
