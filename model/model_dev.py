@@ -55,6 +55,7 @@ class RandomForestModel(Model):
         reg = self.train(x_train, y_train, n_estimators=n_estimators, max_depth=max_depth, min_samples_split=min_samples_split)
         return reg.score(x_test, y_test)
 
+
 class LightGBMModel(Model):
     """
     LightGBMModel that implements the Model interface.
@@ -105,6 +106,7 @@ class LinearRegressionModel(Model):
     def optimize(self, trial, x_train, y_train, x_test, y_test):
         reg = self.train(x_train, y_train)
         return reg.score(x_test, y_test)
+
 
 class HyperparameterTuner:
     """
