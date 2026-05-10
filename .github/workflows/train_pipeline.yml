@@ -28,6 +28,7 @@ jobs:
 
       - name: Verify pipeline imports
         run: |
+          pip install zenml evidently mlflow sqlalchemy_utils
           pip install zenml evidently mlflow
           python -c "from steps.drift_detection import detect_data_drift; print('Drift detection import OK')"
           python -c "from pipelines.training_pipeline import train_pipeline; print('Training pipeline import OK')"
