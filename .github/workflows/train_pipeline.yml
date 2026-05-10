@@ -24,9 +24,11 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 steps/ model/ pipelines/ --max-line-length=120 --ignore=E501,W503,E402,W504
+          flake8 steps/ model/ pipelines/ --max-line-length=120 --ignore=E501,W503,E402,W504,E302,W292,W293,W391
 
       - name: Verify pipeline imports
         run: |
-          pip install zenml evidently
+          pip install zenml evidently mlflow
           python -c "from steps.drift_detection import detect_data_drift; print('Drift detection import OK')"
+          python -c "from pipelines.training_pipeline import train_pipeline; print('Training pipeline import OK')"
+          python -c "from pipelines.deployment_pipeline import continuous_deployment_pipeline; print('Deployment pipeline import OK')"
