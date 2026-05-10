@@ -4,9 +4,8 @@ from steps.clean_data import clean_data
 from steps.model_train import train_model
 from steps.evaluation import evaluation
 
+
 @pipeline
-
-
 def train_pipeline():
     """
     ZenML Pipeline Definition
